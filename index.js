@@ -4,15 +4,13 @@ const employee = {
     streetAddress: '123 Main St',
   };
   
-  // Function to update an employee Object with a new key and value
   function updateEmployeeWithKeyAndValue(employee, key, value) {
     return {
       ...employee,
       [key]: value,
     };
   }
-  
-  // Function to destructively update an employee Object with a new key and value
+
   function destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value) {
     employee[key] = value;
     return employee;
